@@ -1,10 +1,6 @@
-# Dumb for loop
+# Define your function
 
-for(i in 1:50){
+dumb.function <- function(x, seconds){Sys.sleep(seconds); print(paste("this is iteration number", x))}
 
-    Sys.sleep(60)
-
-    print(paste("this is iteration number:", i))
-
-}
+for(i in 1:50){dumb.function(i, 60)}
 
